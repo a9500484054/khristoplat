@@ -1,0 +1,97 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    &__link {
+        width: 372px;
+        height: 140px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-style: italic;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #FFFFFF;
+
+        background: rgba(200, 168, 128, 0.62);
+        box-shadow: 4px 4px 10px rgba(163, 136, 104, 0.25);
+        border-radius: 10px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: #C8A880;
+        }
+        &:active {
+            opacity: .8;
+        }
+        &--active {
+            background: #C8A880;
+        }
+
+    }
+    &__btn {
+        position: relative;
+    }
+    &__list-hidden {
+        position: absolute;
+        top:188px;
+        padding: 10px 22px;
+        width: 372px;
+        height: 0;
+        background: #C8A880;
+        border-radius: 10px;
+        overflow: hidden;
+        transition-duration: .5s;
+        opacity: 0;
+        li {
+            margin-bottom: 15px;
+            height: 0;
+            overflow: hidden;
+            transition-duration: .5s;
+        }
+        a {
+            font-family: $font-family--Roboto;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.03em;
+    
+            color: #FFFFFF;
+            transition-duration: .1s;
+            &:hover,
+            &:focus {
+                font-weight: 700;
+            }
+            &:active {
+                opacity: .8;
+            }
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        font-size: 15px;
+        margin-left: 24px;
+        transform: rotate(180deg);
+        transition-duration: .5s;
+        &--active {
+            transform: rotate(0deg);
+        }   
+    }
+
+}
+
+.list-hidden--active {
+    opacity: 1;
+    height: 175px;
+    li {
+        height: 42px;
+    }
+}

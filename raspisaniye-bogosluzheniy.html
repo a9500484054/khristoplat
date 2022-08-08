@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Храм Святителя Петра митрополита Московского</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/icon-style.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    <div class="wrapper container">
+
+        <aside class="aside">
+            <ul class="menu">
+                <li class="menu__item">
+                    <button class="menu__link menu__btn">о Храме<i class="menu__icon icon-triangle"></i></button>
+                    <ul class="menu__list-hidden">
+                        <li><a href="about.html">Храм Святителя Петра, Митрополита Московского</a></li>
+                        <li><a href="about.html">Храм Святителя Петра, Митрополита Московского</a></li>
+                        <li><a href="about.html">Храм Святителя Петра, Митрополита Московского</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link menu__link--active" href="raspisaniye-bogosluzheniy.html">Расписание богослужений</a></li>
+                <li class="menu__item"><a class="menu__link" href="treby.html">Требы</a></li>
+                <li class="menu__item"><a class="menu__link" href="pozhertvovaniye.html">Пожертвование</a></li>
+                <li class="menu__item"><a class="menu__link" href="news.html">Новости</a></li>
+                <li class="menu__item"><a class="menu__link" href="kontakty-i-rekvizity.html">Контакты и реквизиты</a></li>
+            </ul>
+        </aside>
+
+        <div class="main">
+            
+            <div class="header">
+                <i class="header__star star icon-star"></i>
+                <ul class="header__hole holi">
+                    <li class="holi__item">
+                        <button class="holi__link holi__link--active text-left"> <span>Храм Святителя Петра, Митрополита Московского</span><span class="holi__arrow"><i class="icon-arrow-r"></i></span></button>
+                    </li>
+                </ul>
+                <a class="header__close btn btn--close" href="index.html">
+                    <i class="icon-star"></i>
+                </a>
+            </div>
+
+            <section class="calendar">
+                <div class="calendar__block-one" id="airdatepicker">
+                </div>
+                <div class="calendar__block-two" >
+                    <div class="events">
+                        <h3 class="events__title">Пятница</h3>
+                        <div class="events__block">
+                            <ul class="events__list">
+                                <li class="events__item">старый стиль</li>
+                                <li class="events__item">30 апреля</li>
+                            </ul>
+                            <ul class="events__list">
+                                <li class="events__item">новый стиль</li>
+                                <li class="events__item">13 мая</li>
+                            </ul>
+                        </div>
+                        <p class="events__text">Седмица 3-я по Пасхе. Глас вторый.</p>
+                        <div class="events__text-elem">
+                            <span><i class="icon-star"></i></span>
+                            Пост. Разрешается рыба
+                            <span><i class="icon-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="read">
+                <ul class="read__list">
+                    <li class="read__item">Житие</li>
+                    <li class="read__item">Ап. Иакова Зеведеева (44). </li>
+                    <li class="read__item">Обретение мощей свт. Никиты, еп. Новгородского (1558). </li>
+                    <li class="read__item">Свт. Игнатия Брянчанинова, еп. Кавказского и Черноморского (1867).</li>
+                    <li class="read__item">Свт. Доната, еп. Еврии (ок. 387). </li>
+                    <li class="read__item">Обретение мощей сщмч. Василия, еп. Амасийского (IV). </li>
+                    <li class="read__item">Мч. Максима. Новомч. Аргиры (1725).</li>
+                </ul>
+                <ul class="read__list">
+                    <li class="read__item">Евангельские Чтения</li>
+                    <li class="read__item">Иоанна 21:15-25 (на утрене)</li>
+                    <li class="read__item">Деяния 8:40-9:19</li>
+                    <li class="read__item">Иоанна 6:48-54</li>
+                    <li class="read__item">Деяния 12:1-11 (апостолу)</li>
+                    <li class="read__item">Луки 5:1-11 (апостолу)</li>
+                    <li class="read__item">Евреям 7:26-8:2 (святителю)</li>
+                    <li class="read__item">Иоанна 10:9-16 (святителю)</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        new AirDatepicker('#airdatepicker', {
+            
+        });
+    </script>
+
+</body>
+</html>
+

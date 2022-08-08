@@ -1,0 +1,54 @@
+.holi {
+    display: flex;   
+    padding: 10px;
+    &__item {
+        margin-right: 19px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        width: 355px;
+        height: 54px;
+
+        font-style: italic;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        
+        color: #FFFFFF;
+
+        background: rgba(200, 168, 128, 0.62);
+        border-radius: 4px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: #C8A880;
+        }
+        &:active {
+            opacity: .8;
+        }
+        &--active {
+            background: #C8A880;
+        }
+    }
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.69);
+        border-radius: 50%;
+        i {
+            font-size: 10px;
+            color: #513F34;
+        }
+    }
+}
+

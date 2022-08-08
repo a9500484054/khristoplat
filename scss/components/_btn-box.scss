@@ -1,0 +1,47 @@
+.btn-box{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    align-self: flex-end;
+
+}
+
+.position {
+    position: relative;
+    width: 29px;
+    height: 40px;
+    margin: 0 18px;
+    &__entry {
+        position: absolute;
+        top: 2px;
+        left: -3px;
+        font-family: $font-family--Roboto;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #9D938B;
+    }
+    &__elem {
+        position: absolute;
+        top: 22px;
+        right: 1px;
+        display: inline-block;
+        width: 27px;
+        height: 1px;
+        background: #9D938B;
+        transform: rotate(118.44deg);
+    }
+    &__all {
+        position: absolute;
+        top: 18px;
+        right: 3px;
+        font-family: $font-family--Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+
+        color: rgba(157, 147, 139, 0.53);
+    }
+}

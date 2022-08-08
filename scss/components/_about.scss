@@ -1,0 +1,12 @@
+.about {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &--active {
+        display: flex;
+    }
+}

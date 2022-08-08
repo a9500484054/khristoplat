@@ -1,0 +1,48 @@
+.contact {
+    display: flex;
+}
+.contact__list {
+    margin-right: 112px;
+}
+.contact__elem {
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #513F34;
+    i {
+        color: #513F34;
+    }
+}
+.contact__item {
+    margin-bottom: 12px;
+    display: flex;
+    font-family: $font-family--Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+
+    letter-spacing: 0.03em;
+
+    color: #513F34;
+    span,
+    a {
+        max-width: 336px;
+        font-family: $font-family--Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+    
+        letter-spacing: 0.03em;
+    
+        color: #513F34;
+    }
+}
+
+.contact__map {
+    max-width: 600px;
+    width: 100%;
+}

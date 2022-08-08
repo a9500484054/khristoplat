@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    &__star {
+        margin-right: 20px;
+    }
+    &__close {
+        margin-left: auto;
+    }
+}       

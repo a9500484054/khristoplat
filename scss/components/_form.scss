@@ -1,0 +1,150 @@
+.form {
+    &__title {
+        margin-bottom: 29px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #513F34;
+    }
+    &__label {
+        max-width: 496px;
+        position: relative;
+        margin-bottom: 29px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        margin-bottom: 7px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+    &__arrow-bottom {
+        position: absolute;
+        right: 19px;
+        top: 54px;
+        color: #513F34;
+    }
+    &__input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+        max-width: 496px;
+        padding: 18px 20px; 
+        border: 2px solid rgba(81, 63, 52, 0.55);
+        border-radius: 4px;
+        appearance: none;
+        background: #fff;
+    }
+    &__name-add {
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 29px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+        i {
+            margin-right: 8px;
+            display: inline-block;
+            transform: rotate(45deg);
+            font-size: 12px;
+        }
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+    &__buy {
+        margin-bottom: 20px;
+    }
+    &__number {
+        margin-right: 8px;
+        font-family: $font-family--Merriweather;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+    &__rub {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+
+        color: #513F34;
+    }
+    &__btn {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 228px;
+        height: 50px;
+        
+        font-family: $font-family--Roboto;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: #FFFFFF;
+    
+        background: #C8A880;
+        border-radius: 4px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: #A38868;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+    &__сonsent {
+        max-width: 392px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+    &__link {
+        color: #A38868;
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+}
+
+.form--flex {
+    display: flex;
+    flex-wrap: wrap;
+    div:nth-child(1){
+        flex-basis: 50%;
+    }
+    div:nth-child(2){
+        flex-basis: 50%;
+    }
+    div:nth-child(3){
+        margin-top: 65px;
+        flex-basis: 100%;
+    }
+}
